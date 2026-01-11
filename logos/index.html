@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docti Logo Assets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F7F7FA;
+      padding: 40px;
+      color: #1C1C1E;
+      min-height: 100vh;
+    }
+    .header {
+      max-width: 1000px;
+      margin: 0 auto 48px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #77B1CC;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #6B6B73;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 0 auto 48px;
+    }
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #77B1CC;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+    }
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .logo-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    .logo-preview {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+    .logo-preview.light-bg {
+      background: #F7F7FA;
+    }
+    .logo-preview.dark-bg {
+      background: #0B1220;
+    }
+    .logo-preview img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .logo-info {
+      padding: 20px 24px;
+      border-top: 1px solid #E8E8EE;
+    }
+    .logo-name {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+    .logo-meta {
+      font-size: 12px;
+      color: #6B6B73;
+      margin-bottom: 12px;
+    }
+    .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #77B1CC;
+      text-decoration: none;
+    }
+    .download-link:hover {
+      text-decoration: underline;
+    }
+    .usage-notes {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    .usage-notes h3 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .usage-notes ul {
+      list-style: none;
+      padding: 0;
+    }
+    .usage-notes li {
+      font-size: 14px;
+      color: #4A4A4F;
+      line-height: 1.8;
+      padding-left: 20px;
+      position: relative;
+    }
+    .usage-notes li::before {
+      content: "•";
+      color: #77B1CC;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="../" class="back-link">← Back to Brand Assets</a>
+    <h1 class="title">Logo Assets</h1>
+    <p class="subtitle">Wordmarks and app icons in blue and orange variants</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Wordmarks</div>
+    <div class="logo-grid">
+      <div class="logo-card">
+        <div class="logo-preview light-bg">
+          <img src="docti_wordmark_blue_fixed.png" alt="Docti Wordmark Blue">
+        </div>
+        <div class="logo-info">
+          <div class="logo-name">Wordmark Blue</div>
+          <div class="logo-meta">Primary logo for light backgrounds</div>
+          <a href="docti_wordmark_blue_fixed.png" download class="download-link">
+            Download PNG
+          </a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-preview dark-bg">
+          <img src="docti_wordmark_orange_fixed.png" alt="Docti Wordmark Orange">
+        </div>
+        <div class="logo-info">
+          <div class="logo-name">Wordmark Orange</div>
+          <div class="logo-meta">Accent variant for dark backgrounds</div>
+          <a href="docti_wordmark_orange_fixed.png" download class="download-link">
+            Download PNG
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">App Icons</div>
+    <div class="logo-grid">
+      <div class="logo-card">
+        <div class="logo-preview light-bg">
+          <img src="docti_thumb_blue.png" alt="Docti App Icon Blue" style="max-width: 120px;">
+        </div>
+        <div class="logo-info">
+          <div class="logo-name">App Icon Blue</div>
+          <div class="logo-meta">Primary app icon</div>
+          <a href="docti_thumb_blue.png" download class="download-link">
+            Download PNG
+          </a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-preview dark-bg">
+          <img src="docti_thumb_orange.png" alt="Docti App Icon Orange" style="max-width: 120px;">
+        </div>
+        <div class="logo-info">
+          <div class="logo-name">App Icon Orange</div>
+          <div class="logo-meta">Secondary/accent app icon</div>
+          <a href="docti_thumb_orange.png" download class="download-link">
+            Download PNG
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="usage-notes">
+    <h3>Usage Guidelines</h3>
+    <ul>
+      <li>Clear space: Maintain padding equal to the height of the "o" around the logo</li>
+      <li>Minimum size: 80px width for digital, 20mm for print</li>
+      <li>Blue variant is primary; use orange for accent or dark backgrounds</li>
+      <li>Never stretch, rotate, or alter the logo proportions</li>
+      <li>Use wordmark for headers/navigation; app icon for compact spaces</li>
+    </ul>
+  </div>
+</body>
+</html>

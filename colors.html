@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docti Color Palette</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F7F7FA;
+      padding: 40px;
+    }
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      color: #1C1C1E;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #1C1C1E;
+      margin-bottom: 16px;
+      margin-top: 32px;
+    }
+    .palette {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .swatch {
+      width: 120px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    .swatch-color {
+      height: 80px;
+      width: 100%;
+    }
+    .swatch-info {
+      padding: 12px;
+    }
+    .swatch-name {
+      font-weight: 600;
+      font-size: 12px;
+      color: #1C1C1E;
+      margin-bottom: 4px;
+    }
+    .swatch-hex {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #6B6B73;
+    }
+    .primary-row {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .primary-swatch {
+      width: 200px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 8px 16px -2px rgba(0,0,0,0.1);
+    }
+    .primary-swatch .swatch-color {
+      height: 120px;
+    }
+    .primary-swatch .swatch-info {
+      padding: 16px;
+    }
+    .primary-swatch .swatch-name {
+      font-size: 16px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .primary-swatch .swatch-hex {
+      font-size: 14px;
+    }
+    .scale-row {
+      display: flex;
+      gap: 4px;
+    }
+    .scale-swatch {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-end;
+      padding: 6px;
+    }
+    .scale-swatch span {
+      font-size: 9px;
+      font-weight: 500;
+      color: white;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    .scale-swatch.light span {
+      color: #1C1C1E;
+      text-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Docti Color Palette</h1>
+
+  <h2>Primary Colors</h2>
+  <div class="primary-row">
+    <div class="primary-swatch">
+      <div class="swatch-color" style="background: #77B1CC;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Docti Blue</div>
+        <div class="swatch-hex">#77B1CC</div>
+      </div>
+    </div>
+    <div class="primary-swatch">
+      <div class="swatch-color" style="background: #F2B371;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Docti Orange</div>
+        <div class="swatch-hex">#F2B371</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Blue Scale</h2>
+  <div class="scale-row">
+    <div class="scale-swatch light" style="background: #E8F4F8;"><span>50</span></div>
+    <div class="scale-swatch light" style="background: #D1E9F1;"><span>100</span></div>
+    <div class="scale-swatch light" style="background: #A8D0E6;"><span>200</span></div>
+    <div class="scale-swatch" style="background: #77B1CC;"><span>300</span></div>
+    <div class="scale-swatch" style="background: #5A9CBE;"><span>400</span></div>
+    <div class="scale-swatch" style="background: #4687AB;"><span>500</span></div>
+    <div class="scale-swatch" style="background: #357292;"><span>600</span></div>
+    <div class="scale-swatch" style="background: #285C78;"><span>700</span></div>
+    <div class="scale-swatch" style="background: #1C465E;"><span>800</span></div>
+    <div class="scale-swatch" style="background: #103044;"><span>900</span></div>
+  </div>
+
+  <h2>Orange Scale</h2>
+  <div class="scale-row">
+    <div class="scale-swatch light" style="background: #FEF7F0;"><span>50</span></div>
+    <div class="scale-swatch light" style="background: #FCEEE0;"><span>100</span></div>
+    <div class="scale-swatch light" style="background: #F8DCC2;"><span>200</span></div>
+    <div class="scale-swatch" style="background: #F2B371;"><span>300</span></div>
+    <div class="scale-swatch" style="background: #E99A4D;"><span>400</span></div>
+    <div class="scale-swatch" style="background: #DB8033;"><span>500</span></div>
+    <div class="scale-swatch" style="background: #C06A22;"><span>600</span></div>
+    <div class="scale-swatch" style="background: #9A5319;"><span>700</span></div>
+    <div class="scale-swatch" style="background: #743E13;"><span>800</span></div>
+    <div class="scale-swatch" style="background: #4E2A0D;"><span>900</span></div>
+  </div>
+
+  <h2>Status Colors</h2>
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #22C55E;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Success</div>
+        <div class="swatch-hex">#22C55E</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #F59E0B;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Warning</div>
+        <div class="swatch-hex">#F59E0B</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #EF4444;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Error</div>
+        <div class="swatch-hex">#EF4444</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: rgba(119,177,204,0.15);"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Info</div>
+        <div class="swatch-hex">#77B1CC 15%</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Neutrals</h2>
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #1C1C1E;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Ink</div>
+        <div class="swatch-hex">#1C1C1E</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #4A4A4F;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Subtext</div>
+        <div class="swatch-hex">#4A4A4F</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #6B6B73;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Muted</div>
+        <div class="swatch-hex">#6B6B73</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #E8E8EE;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Divider</div>
+        <div class="swatch-hex">#E8E8EE</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #FFFFFF; border: 1px solid #E8E8EE;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Surface</div>
+        <div class="swatch-hex">#FFFFFF</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #F7F7FA;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Background</div>
+        <div class="swatch-hex">#F7F7FA</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Dark Mode</h2>
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #0B1220;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Background</div>
+        <div class="swatch-hex">#0B1220</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #0F1A2E;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Surface</div>
+        <div class="swatch-hex">#0F1A2E</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #14213A;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Elevated</div>
+        <div class="swatch-hex">#14213A</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #223253;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Border</div>
+        <div class="swatch-hex">#223253</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

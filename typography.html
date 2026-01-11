@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docti Typography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F7F7FA;
+      padding: 40px;
+      color: #1C1C1E;
+    }
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .section {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #77B1CC;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+    }
+    .specimen {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #E8E8EE;
+    }
+    .specimen:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .specimen-label {
+      font-size: 12px;
+      color: #6B6B73;
+      margin-bottom: 8px;
+      font-family: 'Inter', sans-serif;
+    }
+    .specimen-meta {
+      font-size: 11px;
+      color: #6B6B73;
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 8px;
+    }
+
+    /* Type specimens */
+    .h1-specimen {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .h2-specimen {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .h3-specimen {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+    }
+    .body-large-specimen {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .body-specimen {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .caption-specimen {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #6B6B73;
+    }
+    .button-specimen {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .mono-specimen {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      background: #F7F7FA;
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    .font-showcase {
+      display: flex;
+      gap: 40px;
+      margin-top: 24px;
+    }
+    .font-card {
+      flex: 1;
+    }
+    .font-name {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .font-sample {
+      font-size: 48px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .font-weights {
+      font-size: 12px;
+      color: #6B6B73;
+    }
+    .outfit-sample {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+    }
+    .inter-sample {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+    }
+    .mono-sample {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Docti Typography</h1>
+
+  <div class="section">
+    <div class="section-title">Font Stack</div>
+    <div class="font-showcase">
+      <div class="font-card">
+        <div class="font-name">Outfit</div>
+        <div class="font-sample outfit-sample">Aa</div>
+        <div class="font-weights">Headings, Buttons — 600, 700</div>
+      </div>
+      <div class="font-card">
+        <div class="font-name">Inter</div>
+        <div class="font-sample inter-sample">Aa</div>
+        <div class="font-weights">Body, Labels — 400, 500, 600</div>
+      </div>
+      <div class="font-card">
+        <div class="font-name">JetBrains Mono</div>
+        <div class="font-sample mono-sample">Aa</div>
+        <div class="font-weights">Code, Technical — 400, 500</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Type Scale</div>
+
+    <div class="specimen">
+      <div class="specimen-label">H1 — Page Titles</div>
+      <div class="h1-specimen">Menos pantalla. Mas paciente.</div>
+      <div class="specimen-meta">Outfit 700 · 32px/36px</div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-label">H2 — Section Headers</div>
+      <div class="h2-specimen">Consultas de Hoy</div>
+      <div class="specimen-meta">Outfit 600 · 24px/30px</div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-label">H3 — Subsections</div>
+      <div class="h3-specimen">Historial del Paciente</div>
+      <div class="specimen-meta">Outfit 600 · 20px/26px</div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-label">Body Large — Featured Text</div>
+      <div class="body-large-specimen">Docti hace que el acceso a la atencion medica sea simple, amigable y rapido — sin perder confianza ni profesionalismo.</div>
+      <div class="specimen-meta">Inter 400 · 16px/24px</div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-label">Body — Standard Text</div>
+      <div class="body-specimen">El paciente presenta sintomas de fatiga cronica desde hace aproximadamente 3 meses. Refiere dificultad para dormir y perdida de apetito. Sin antecedentes de condiciones similares.</div>
+      <div class="specimen-meta">Inter 400 · 14px/22px</div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-label">Caption — Labels, Metadata</div>
+      <div class="caption-specimen">Ultima actualizacion: 10 de enero, 2026 · Dr. Garcia</div>
+      <div class="specimen-meta">Inter 400 · 12px/18px</div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-label">Button — Action Text</div>
+      <div class="button-specimen">Reservar Cita</div>
+      <div class="specimen-meta">Outfit 600 · 14px/16px</div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-label">Monospace — Code, Technical</div>
+      <div class="mono-specimen">--docti-primary: #77B1CC;<br>--docti-secondary: #F2B371;</div>
+      <div class="specimen-meta">JetBrains Mono 400 · 14px/22px</div>
+    </div>
+  </div>
+</body>
+</html>
